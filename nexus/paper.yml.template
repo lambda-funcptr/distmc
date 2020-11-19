@@ -32,7 +32,7 @@ settings:
   velocity-support:
     enabled: true
     online-mode: true
-    secret: 0R5SKRXY3ldp
+    secret: DISTMC_FORWARDING_SECRET
   watchdog:
     early-warning-every: 5000
     early-warning-delay: 10000
