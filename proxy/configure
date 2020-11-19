@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd $(dirname $0)
+
+VELOCITY_VERSION=1.1.0
+
+wget "https://versions.velocitypowered.com/download/$VELOCITY_VERSION.jar" -O velocity.jar
+sed "s/DISTMC_FORWARDING_SECRET/$(cat secret)/g" velocity.toml.template >> velocity.toml
