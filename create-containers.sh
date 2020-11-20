@@ -10,9 +10,9 @@ docker network create -d bridge distmc-net
 
 ./mkimages.sh
 
-docker create -e FORWARD_SECRET_ENV=$(cat secrets/secret) \
+docker create \
        --network=distmc-net -p 25565:25565 --name distmc-proxy distmc-proxy
-docker create -e FORWARD_SECRET_ENV=$(cat secrets/secret) \
+docker create \
        --network=distmc-net --name distmc-nexus distmc-nexus
 
 docker update --restart unless-stopped distmc-proxy
