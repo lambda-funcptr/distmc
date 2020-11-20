@@ -1,4 +1,4 @@
-
+# 
 #  ExamplePortal:
 #    world: it will be the world name
 #    triggerblock: LAVA # will only be used if the hastriggerblock is true and can be id or text
@@ -17,3 +17,16 @@
 #        X:
 #        Y:
 #        Z:
+
+funcptr-org-skyblock:
+  world: lobby/nexus
+  triggerblock: NETHER_PORTAL
+  bungee: funcptr-skyblock
+  pos1:
+    X: -70
+    Y: 67
+    Z: -8
+  pos2:
+    X: -70
+    Y: 66
+    Z: -8

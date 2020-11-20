@@ -13,38 +13,24 @@
 verbose: false
 config-version: 20
 settings:
-  console-has-all-permissions: false
-  max-joins-per-tick: 3
-  track-plugin-scoreboards: false
-  chunk-tasks-per-tick: 1000
-  player-auto-save-rate: -1
-  max-player-auto-save-per-tick: -1
   load-permissions-yml-before-plugins: true
   bungee-online-mode: true
-  suggest-player-names-when-null-tab-completions: true
   region-file-cache-size: 256
   incoming-packet-spam-threshold: 300
-  save-player-data: true
+  max-joins-per-tick: 3
+  track-plugin-scoreboards: false
+  console-has-all-permissions: false
+  suggest-player-names-when-null-tab-completions: true
   use-alternative-luck-formula: false
-  use-versioned-world: false
+  chunk-tasks-per-tick: 1000
   enable-player-collisions: true
+  player-auto-save-rate: -1
+  max-player-auto-save-per-tick: -1
   save-empty-scoreboard-teams: false
   velocity-support:
     enabled: false
-    online-mode: true
-    secret: DISTMC_FORWARDING_SECRET
-  watchdog:
-    early-warning-every: 5000
-    early-warning-delay: 10000
-  spam-limiter:
-    tab-spam-increment: 1
-    tab-spam-limit: 500
-  book-size:
-    page-max: 2560
-    total-multiplier: 0.98
-  async-chunks:
-    enable: true
-    threads: -1
+    online-mode: false
+    secret: test
   unsupported-settings:
     allow-headless-pistons: false
     allow-permanent-block-break-exploits: false
@@ -57,14 +43,25 @@ settings:
     allow-piston-duplication-readme: This setting controls if player should be able
       to use TNT duplication, but this also allows duplicating carpet, rails and potentially
       other items
+  watchdog:
+    early-warning-every: 5000
+    early-warning-delay: 10000
+  spam-limiter:
+    tab-spam-increment: 1
+    tab-spam-limit: 500
+  book-size:
+    page-max: 2560
+    total-multiplier: 0.98
+  async-chunks:
+    threads: -1
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
   kick:
-    flying-player: Flying is not enabled on this server
-    flying-vehicle: Flying is not enabled on this server
     authentication-servers-down: ''
     connection-throttle: Connection throttled! Please wait before reconnecting.
+    flying-player: Flying is not enabled on this server
+    flying-vehicle: Flying is not enabled on this server
 timings:
   enabled: true
   verbose: true
@@ -77,32 +74,18 @@ timings:
   server-name: Unknown Server
 world-settings:
   default:
-    delay-chunk-unloads-by: 10s
-    should-remove-dragon: false
-    phantoms-do-not-spawn-on-creative-players: true
-    phantoms-only-attack-insomniacs: true
-    zombie-villager-infection-chance: -1.0
-    zombies-target-turtle-eggs: true
-    iron-golems-can-spawn-in-air: false
-    light-queue-size: 20
-    seed-based-feature-search: true
-    portal-create-radius: 16
-    entities-target-with-follow-range: false
-    per-player-mob-spawns: false
-    fix-zero-tick-instant-grow-farms: true
-    count-all-mobs-for-spawning: false
+    baby-zombie-movement-modifier: 0.5
     optimize-explosions: false
-    portal-search-radius: 128
     disable-teleportation-suffocation-check: false
-    fire-physics-event-for-redstone: false
     fixed-chunk-inhabited-time: -1
     use-vanilla-world-scoreboard-name-coloring: false
-    remove-corrupt-tile-entities: false
-    enable-treasure-maps: true
-    treasure-maps-return-already-discovered: false
     experience-merge-max-value: -1
     prevent-moving-into-unloaded-chunks: false
     max-auto-save-chunks-per-tick: 24
+    count-all-mobs-for-spawning: false
+    per-player-mob-spawns: false
+    delay-chunk-unloads-by: 10s
+    should-remove-dragon: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
@@ -110,42 +93,52 @@ world-settings:
     disable-creeper-lingering-effect: false
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
+    remove-corrupt-tile-entities: false
+    phantoms-do-not-spawn-on-creative-players: true
+    phantoms-only-attack-insomniacs: true
+    iron-golems-can-spawn-in-air: false
+    light-queue-size: 20
+    auto-save-interval: -1
+    zombies-target-turtle-eggs: true
+    zombie-villager-infection-chance: -1.0
+    seed-based-feature-search: true
+    all-chunks-are-slime-chunks: false
+    mob-spawner-tick-rate: 1
+    armor-stands-tick: true
+    non-player-arrow-despawn-rate: -1
+    creative-arrow-despawn-rate: -1
+    grass-spread-tick-rate: 1
+    water-over-lava-flow-speed: 5
+    use-faster-eigencraft-redstone: false
+    nether-ceiling-void-damage-height: 0
+    allow-non-player-entities-on-scoreboards: false
+    portal-search-radius: 128
+    portal-create-radius: 16
+    entities-target-with-follow-range: false
+    spawner-nerfed-mobs-should-jump: false
+    parrots-are-unaffected-by-player-movement: false
+    disable-explosion-knockback: false
+    keep-spawn-loaded: true
+    armor-stands-do-collision-entity-lookups: true
     disable-thunder: false
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
     keep-spawn-loaded-range: 10
-    keep-spawn-loaded: true
-    auto-save-interval: -1
-    armor-stands-do-collision-entity-lookups: true
-    all-chunks-are-slime-chunks: false
-    mob-spawner-tick-rate: 1
-    baby-zombie-movement-speed: 0.5
-    nether-ceiling-void-damage-height: 0
-    grass-spread-tick-rate: 1
-    water-over-lava-flow-speed: 5
-    bed-search-radius: 1
-    use-faster-eigencraft-redstone: false
-    allow-non-player-entities-on-scoreboards: false
-    disable-explosion-knockback: false
-    parrots-are-unaffected-by-player-movement: false
     container-update-tick-rate: 1
     prevent-tnt-from-moving-in-water: false
-    non-player-arrow-despawn-rate: -1
-    creative-arrow-despawn-rate: -1
-    armor-stands-tick: true
-    spawner-nerfed-mobs-should-jump: false
-    allow-leashing-undead-horse: false
+    enable-treasure-maps: true
+    treasure-maps-return-already-discovered: false
     game-mechanics:
-      nerf-pigmen-from-nether-portals: false
-      disable-pillager-patrols: false
-      disable-relative-projectile-velocity: false
       scan-for-legacy-ender-dragon: true
-      disable-unloaded-chunk-enderpearl-exploit: true
+      disable-pillager-patrols: false
       disable-chest-cat-detection: false
-      shield-blocking-delay: 5
+      nerf-pigmen-from-nether-portals: false
       disable-player-crits: false
       disable-sprint-interruption-on-attack: false
+      shield-blocking-delay: 5
       disable-end-credits: false
+      disable-unloaded-chunk-enderpearl-exploit: true
+      disable-relative-projectile-velocity: false
       pillager-patrols:
         spawn-chance: 0.2
         spawn-delay:
@@ -163,10 +156,6 @@ world-settings:
     despawn-ranges:
       soft: 32
       hard: 128
-    lightning-strike-distance-limit:
-      sound: -1
-      impact-sound: -1
-      flash: -1
     frosted-ice:
       enabled: true
       delay:
@@ -179,18 +168,33 @@ world-settings:
       max-refills: -1
       refresh-min: 12h
       refresh-max: 2d
+    alt-item-despawn-rate:
+      enabled: false
+      items:
+        COBBLESTONE: 300
     hopper:
       cooldown-when-full: true
       disable-move-event: false
+    lightning-strike-distance-limit:
+      sound: -1
+      impact-sound: -1
+      flash: -1
+    wandering-trader:
+      spawn-minute-length: 1200
+      spawn-day-length: 24000
+      spawn-chance-failure-increment: 25
+      spawn-chance-min: 25
+      spawn-chance-max: 75
     squid-spawn-height:
       maximum: 0.0
+    generator-settings:
+      flat-bedrock: false
     anti-xray:
-      lava-obscures: false
       enabled: false
       engine-mode: 1
-      chunk-edge-mode: 2
       max-chunk-section-index: 3
       update-radius: 2
+      lava-obscures: false
       hidden-blocks:
       - gold_ore
       - iron_ore
@@ -207,12 +211,5 @@ world-settings:
       replacement-blocks:
       - stone
       - oak_planks
-    alt-item-despawn-rate:
-      enabled: false
-      items:
-        COBBLESTONE: 300
-    generator-settings:
-      flat-bedrock: false
-    baby-zombie-movement-modifier: 0.5
     viewdistances:
       no-tick-view-distance: -1

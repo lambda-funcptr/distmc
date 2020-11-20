@@ -1,0 +1,52 @@
+server_connect_timeout: 5000
+remote_ping_cache: -1
+forge_support: true
+player_limit: -1
+permissions:
+  default:
+  - bungeecord.command.server
+  - bungeecord.command.list
+  admin:
+  - bungeecord.command.alert
+  - bungeecord.command.end
+  - bungeecord.command.ip
+  - bungeecord.command.reload
+timeout: 30000
+log_commands: false
+network_compression_threshold: 256
+online_mode: true
+disabled_commands:
+- disabledcommandhere
+
+servers:
+  nexus:
+    motd: '&1Nexus'
+    address: distmc-nexus:30000
+    restricted: false
+
+listeners:
+- query_port: 25565
+  motd: '&1Distributed Minecraft Communities'
+  tab_list: GLOBAL_PING
+  query_enabled: false
+  proxy_protocol: false
+  forced_hosts:
+    funcptr.org: nexus
+  ping_passthrough: false
+  priorities:
+  - nexus
+  bind_local_address: true
+  host: 0.0.0.0:25565
+  max_players: 256
+  tab_size: 60
+  force_default_server: false
+ip_forward: true
+remote_ping_timeout: 5000
+prevent_proxy_connections: false
+#groups:
+#  md_5:
+#  - admin
+connection_throttle: 4000
+#stats: 8290a357-9c59-4d2e-a61e-c14416b0d824
+connection_throttle_limit: 3
+log_pings: true
