@@ -23,6 +23,10 @@ servers:
     motd: '&1Nexus'
     address: distmc-nexus:30000
     restricted: false
+  funcptr-org-skyblock:
+    motd: 'Skyblock by funcptr.org'
+    address: 100.64.0.1:30001
+    restricted: false
 
 listeners:
 - query_port: 25565

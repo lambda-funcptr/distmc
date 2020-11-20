@@ -21,7 +21,7 @@
 funcptr-org-skyblock:
   world: lobby/nexus
   triggerblock: NETHER_PORTAL
-  bungee: funcptr-skyblock
+  bungee: funcptr-org-skyblock
   pos1:
     X: -70
     Y: 67
