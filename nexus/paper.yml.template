@@ -30,7 +30,7 @@ settings:
   enable-player-collisions: true
   save-empty-scoreboard-teams: false
   velocity-support:
-    enabled: true
+    enabled: false
     online-mode: true
     secret: DISTMC_FORWARDING_SECRET
   watchdog:
