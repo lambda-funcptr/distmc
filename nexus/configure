@@ -9,4 +9,9 @@ wget "https://papermc.io/api/v1/paper/$MC_VERSION/$PAPERMC_BUILD/download" -O se
 
 sh plugins/DownloadPlugins.sh
 
+<<<<<<< HEAD
+=======
+sed "s/DISTMC_FORWARDING_SECRET/$FORWARD_SECRET_ENV/g" paper.yml.template > paper.yml
+
+>>>>>>> refs/remotes/origin/master
 echo "eula=true" > eula.txt
