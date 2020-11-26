@@ -20,16 +20,16 @@ disabled_commands:
 
 servers:
   nexus:
-    motd: '&1Nexus'
+    motd: "&1Nexus"
     address: distmc-nexus:30000
     restricted: false
   funcptr-org-skyblock:
-    motd: 'Skyblock by funcptr.org'
+    motd: "Skyblock by funcptr.org"
     address: 100.64.0.1:30001
     restricted: false
   seedno-de-safe-space:
-    motd: 'Seednode\'s Safe Space'
-    address 51.222.65.1:25570
+    motd: "Seednode's Safe Space"
+    address: 51.222.65.1:25570
     restricted: false
 
 listeners:
