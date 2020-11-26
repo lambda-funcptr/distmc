@@ -11,7 +11,7 @@ docker network create -d bridge distmc-net
 ./mkimages.sh
 
 docker create \
-       --network=distmc-net -p 25565:25565 --name distmc-proxy distmc-proxy
+       --network=distmc-net -p 25565:25565 -p 19132:19132 --name distmc-proxy distmc-proxy
 docker create \
        --network=distmc-net --name distmc-nexus distmc-nexus
 
