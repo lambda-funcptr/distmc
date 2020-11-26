@@ -1,4 +1,4 @@
-FROM harbor.fnptr.net/docker/library/alpine:latest
+FROM alpine:latest
 COPY . /srv/distmc/proxy
 RUN apk update && apk add openjdk11-jre-headless
 WORKDIR /srv/distmc/proxy
