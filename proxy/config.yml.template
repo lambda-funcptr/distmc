@@ -27,6 +27,10 @@ servers:
     motd: 'Skyblock by funcptr.org'
     address: 100.64.0.1:30001
     restricted: false
+  seedno-de-safe-space:
+    motd: 'Seednode's Safe Space'
+    address 51.222.65.1:25570
+    restricted: false
 
 listeners:
 - query_port: 25565
