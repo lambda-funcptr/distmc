@@ -1,6 +1,6 @@
-FROM debian:latest
+FROM harbor.fnptr.net/docker/library/alpine:latest
 COPY . /srv/distmc/proxy
-RUN apt update && apt -y install openjdk-11-jre-headless wget
+RUN apk update && apk add openjdk11-jre-headless
 WORKDIR /srv/distmc/proxy
 RUN sh configure
 ENTRYPOINT sh /srv/distmc/proxy/start.sh
