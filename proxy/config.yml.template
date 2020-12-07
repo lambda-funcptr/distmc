@@ -21,7 +21,7 @@ disabled_commands:
 servers:
   nexus:
     motd: "&1Nexus"
-    address: distmc-nexus:30000
+    address: 127.0.0.1:30000
     restricted: false
   funcptr-org-skyblock:
     motd: "Skyblock by funcptr.org"
