@@ -6,7 +6,7 @@ docker stop distmc-proxy distmc-nexus
 docker container rm distmc-proxy distmc-nexus
 
 docker network rm distmc-net
-docker network create -d bridge distmc-net
+docker network create -d bridge --ipv6 distmc-net
 
 ./mkimages.sh
 
