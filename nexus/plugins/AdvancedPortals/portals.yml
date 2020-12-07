@@ -30,3 +30,27 @@ funcptr-org-skyblock:
     X: -70
     Y: 66
     Z: -8
+seedno-de-safe-space:
+  world: lobby/nexus
+  triggerblock: NETHER_PORTAL
+  bungee: seedno-de-safe-space
+  pos1:
+    X: -83
+    Y: 67
+    Z: -8
+  pos2:
+    X: -83
+    Y: 66
+    Z: -8
+en0-io-minecraft:
+  world: lobby/nexus
+  triggerblock: NETHER_PORTAL
+  bungee: en0-io-minecraft
+  pos1:
+    X: -83
+    Y: 67
+    Z: -14
+  pos2:
+    X: -83
+    Y: 66
+    Z: -14
