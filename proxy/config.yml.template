@@ -28,7 +28,7 @@ servers:
     address: 100.64.0.1:30001
     restricted: false
   funcptr-org-events:
-    motd: "Minecraft Events @ funcptr.org"
+    motd: "Minecraft Events at funcptr.org"
     address: 100.64.0.1:30255
     restricted: false
   seedno-de-safe-space:

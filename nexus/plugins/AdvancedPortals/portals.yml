@@ -54,3 +54,15 @@ en0-io-minecraft:
     X: -83
     Y: 66
     Z: -14
+funcptr-org-mc-events:
+  world: lobby/nexus
+  triggerblock: END_PORTAL
+  bungee: funcptr-org-mc-events
+  pos1:
+    X: -108
+    Y: 65
+    Z: 23
+  pos2:
+    X: -109
+    Y: 65
+    Z: 22
